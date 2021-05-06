@@ -6,8 +6,9 @@ describe('Fix the Scope', function() {
       expect(window.myAnimal()).toEqual('dog')
     })
 
-    it('does not modify the  animal variable', () => {
+    it('does not modify the animal variable', () => {
       expect(window.myAnimal.toString()).toNotContain("animal =")
+      animal='cat';
     })
   })
 
